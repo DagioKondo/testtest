@@ -40,6 +40,12 @@ class LoginViewController: UIViewController,LoginOKDelegate {
         
         view.addSubview(activityIndicatorView)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        だいごですよ
+    }
 
     func loginOK(userID: String) {
         if userID != nil{
